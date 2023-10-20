@@ -1,3 +1,5 @@
+#harshita
+
 create database dbsproject;
 use dbsproject;
 
@@ -56,3 +58,115 @@ insert into Login values(1,"sarah00@gmail.com","test1");
 insert into Login values(2,"mehra.priya@gmail.com","test2");
 insert into Login values(3,"neil@gmail.com","test3");
 select * from Login;
+
+#ritunjaya
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    RestaurantID INT,
+    AddressID INT,
+    OrderDate DATETIME,
+    OrderStatus VARCHAR(20),
+    PaymentID INT,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (RestaurantID) REFERENCES Restaurants(RestaurantID),
+    FOREIGN KEY (AddressID) REFERENCES Address(AddressID),
+    FOREIGN KEY (PaymentID) REFERENCES Payments(PaymentID)
+);
+
+
+CREATE TABLE Cart (
+    CartItemID INT PRIMARY KEY,
+    ItemID INT,
+    Quantity INT,
+    FOREIGN KEY (ItemID) REFERENCES MenuItem(ItemID)
+);
+
+CREATE TABLE Payments (
+    PaymentID INT PRIMARY KEY,
+    PaymentType VARCHAR(20)
+);
+
+CREATE TABLE Feedback (
+    FeedbackID INT PRIMARY KEY,
+    OrderID INT,VARCHAR(30),
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+);
+
+#anjasha
+
+-- Create MenuCategories table
+CREATE TABLE MenuCategories (
+    CategoryID INT PRIMARY KEY,
+    Name VARCHAR(255)
+);
+
+-- Create MenuItems1 table
+CREATE TABLE MenuItems1 (
+    ItemID INT PRIMARY KEY,
+    CategoryID INT,
+    Name VARCHAR(255),
+    Price DECIMAL(10, 2),
+    Description TEXT,
+    FOREIGN KEY (CategoryID) REFERENCES MenuCategories(CategoryID)
+);
+
+-- Create MenuItems2 table
+CREATE TABLE MenuItems2 (
+    ItemID INT PRIMARY KEY,
+    CategoryID INT,
+    Name VARCHAR(255),
+    Price DECIMAL(10, 2),
+    Description TEXT,
+    FOREIGN KEY (CategoryID) REFERENCES MenuCategories(CategoryID)
+);
+
+-- Create MenuItems3 table
+CREATE TABLE MenuItems3 (
+    ItemID INT PRIMARY KEY,
+    CategoryID INT,
+    Name VARCHAR(255),
+    Price DECIMAL(10, 2),
+    Description TEXT,
+    FOREIGN KEY (CategoryID) REFERENCES MenuCategories(CategoryID)
+);
+
+INSERT INTO MenuCategories (CategoryID, Name)
+VALUES
+(1, 'Appetizers'),
+(2, 'Main Courses'),
+(3, 'Desserts'),
+(4, 'Beverages'),
+(5, 'Specials');
+
+
+INSERT INTO MenuItems1 (ItemID, CategoryID, Name, Price, Description)
+VALUES
+(1, 1, 'Mozzarella Sticks', 8.99, 'Deep-fried mozzarella sticks with marinara sauce.'),
+(2, 2, 'Chicken Alfredo', 14.99, 'Creamy Alfredo sauce with grilled chicken and fettuccine.'),
+(3, 3, 'Chocolate Cake', 6.99, 'Decadent chocolate cake with a rich chocolate ganache.'),
+(4, 4, 'Soda', 1.99, 'Choice of various soft drinks.'),
+(5, 1, 'Onion Rings', 7.99, 'Crispy battered onion rings served with dipping sauce.');
+
+
+INSERT INTO MenuItems2 (ItemID, CategoryID, Name, Price, Description)
+VALUES
+(6, 1, 'Buffalo Wings', 10.99, 'Spicy buffalo wings with celery and blue cheese.'),
+(7, 2, 'Steak Fajitas', 18.99, 'Grilled steak with peppers, onions, and tortillas.'),
+(8, 3, 'Cheesecake', 7.99, 'Classic New York-style cheesecake with fruit topping.'),
+(9, 4, 'Iced Tea', 1.49, 'Refreshing iced tea with lemon slices.'),
+(10, 1, 'Bruschetta', 9.99, 'Toasted bread topped with diced tomatoes and basil.');
+
+
+INSERT INTO MenuItems3 (ItemID, CategoryID, Name, Price, Description)
+VALUES
+(11, 1, 'Spinach Dip', 8.49, 'Creamy spinach and artichoke dip with tortilla chips.'),
+(12, 2, 'Salmon Teriyaki', 17.99, 'Grilled salmon with teriyaki glaze and steamed vegetables.'),
+(13, 3, 'Tiramisu', 8.99, 'Classic Italian tiramisu dessert.'),
+(14, 4, 'Lemonade', 1.99, 'Homemade lemonade with fresh lemons.'),
+(15, 1, 'Fried Calamari', 11.99, 'Crispy fried calamari served with marinara sauce.');
+
+
+
+
