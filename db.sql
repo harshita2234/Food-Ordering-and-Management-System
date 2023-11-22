@@ -77,7 +77,7 @@ CREATE TABLE Payments (
 
 CREATE TABLE Feedback (
     FeedbackID INT PRIMARY KEY,
-    OrderID INT,VARCHAR(30),
+    OrderID INT,
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
 
