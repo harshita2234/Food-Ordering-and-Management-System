@@ -1,0 +1,5 @@
+C:\Users\Harshita\Desktop\Project\Project\obj\Release\Project.csproj.AssemblyReference.cache
+C:\Users\Harshita\Desktop\Project\Project\obj\Release\Project.Form1.resources
+C:\Users\Harshita\Desktop\Project\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\Harshita\Desktop\Project\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\Harshita\Desktop\Project\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
