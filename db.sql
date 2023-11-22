@@ -107,3 +107,15 @@ CREATE TABLE Feedback (
     OrderID INT,
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
+
+
+
+
+
+
+
+#some more info to be added for demo
+insert into payments values (1, 'UPI'),(2, 'Credit Card');
+
+insert into orders values (1, 1, 501, 109, '2023-11-22 10:10:10', 'Delivered', 1),(2, 1, 502, 109, '2023-11-23 11:00:12', 'Delivered', 2);
+
