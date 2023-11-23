@@ -65,21 +65,24 @@ CREATE TABLE MenuItems (
 
 INSERT INTO MenuItems (ItemID, RestaurantID, CategoryID, Name, Price, Description)
 VALUES
-(1,501, 1, 'Mozzarella Sticks', 8.99, 'Deep-fried mozzarella sticks with marinara sauce.'),
-(2,501, 2, 'Chicken Alfredo', 14.99, 'Creamy Alfredo sauce with grilled chicken and fettuccine.'),
-(3,501, 3, 'Chocolate Cake', 6.99, 'Decadent chocolate cake with a rich chocolate ganache.'),
-(4,501, 4, 'Soda', 1.99, 'Choice of various soft drinks.'),
-(5,501, 1, 'Onion Rings', 7.99, 'Crispy battered onion rings served with dipping sauce.'),
-(6,502, 1, 'Buffalo Wings', 10.99, 'Spicy buffalo wings with celery and blue cheese.'),
-(7,502, 2, 'Steak Fajitas', 18.99, 'Grilled steak with peppers, onions, and tortillas.'),
-(8,502, 3, 'Cheesecake', 7.99, 'Classic New York-style cheesecake with fruit topping.'),
-(9,502, 4, 'Iced Tea', 1.49, 'Refreshing iced tea with lemon slices.'),
-(10,502, 1, 'Bruschetta', 9.99, 'Toasted bread topped with diced tomatoes and basil.'),
-(11,503, 1, 'Spinach Dip', 8.49, 'Creamy spinach and artichoke dip with tortilla chips.'),
-(12,503, 2, 'Salmon Teriyaki', 17.99, 'Grilled salmon with teriyaki glaze and steamed vegetables.'),
-(13,503, 3, 'Tiramisu', 8.99, 'Classic Italian tiramisu dessert.'),
-(14,503, 4, 'Lemonade', 1.99, 'Homemade lemonade with fresh lemons.'),
-(15,503, 1, 'Fried Calamari', 11.99, 'Crispy fried calamari served with marinara sauce.');
+(1,501, 1, 'French Fries', 70, 'Deep-fried potatoes sticks with cheese sauce.'),
+(2,501, 2, 'Coffee', 99, 'A double shot of espresso with steamed milk and a small layer of foam.'),
+(3,501, 3, 'Salad', 120, 'Seasonal salads made fresh daily for a quick and healthy lunch.'),
+(4,501, 4, 'Burger', 100, 'Juicy, big, loaded with toppings of your choice.'),
+(5,501, 1, 'Thali', 100, 'rice, dal, vegetables, roti, papad, dahi (yoghurt), small amounts of chutney or pickle, and a sweet dish.'),
+(6,502, 1, 'Pizza', 120, 'A classic Italian pizza with fresh mozzarella, basil and tomato sauce.'),
+(7,502, 2, 'Coffee', 100, 'A double shot of espresso with steamed milk, a small layer of foam and a special sweetened coffee flavoured syrup.'),
+(8,502, 3, 'Salad', 200, 'A refreshing salad with crispy romaine lettuce, grated Parmesan cheese, and our signature Caesar dressing.'),
+(9,502, 4, 'ChocoChip Cookies', 99, 'Indulge in a timeless treat that has delighted generations – our irresistible Classic Chocolate Chip Cookies.'),
+(10,502, 1, 'Grilled Cheese', 90, 'A timeless classic that never disappoints.'),
+(11,503, 1, 'Sub', 220, 'Sink your teeth into a symphony of flavours and textures with this meatball marinara sub.'),
+(12,503, 2, 'Pasta', 150, 'A creamy tomato sauce with vodka added for a subtle sweetness and a kick of alcohol.'),
+(13,503, 3, 'French Fries', 100, 'A timeless favourite, these slender, crispy fries are made with perfectly seasoned potatoes, cut into thin strips, and fried to golden perfection.'),
+(14,503, 4, 'Pizza', 210, 'A controversial yet beloved pizza, this combination features sweet pineapple chunks nestled among savory ham slices and a bed of melted mozzarella cheese.'),
+(15,503, 1, 'Salad', 150, 'A hearty salad with grilled chicken, bacon, avocado, blue cheese, and hard-boiled eggs, all tossed in our signature Cobb dressing.'),
+(16,503, 2, 'Burger', 190, 'A bite-sized indulgence, these mini burgers are perfect for parties, appetizers, or a quick snack.'),
+(17,503, 3, 'Cafe Latte', 110, 'A single shot of espresso with a small layer of foam'),
+(18,503, 4, 'Pasta', 140, 'A classic comfort food made with macaroni pasta, béchamel sauce, and cheese.');
 
 CREATE TABLE Cart (
     CartItemID INT PRIMARY KEY,
