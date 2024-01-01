@@ -17,5 +17,5 @@ The software to be produced is an Online Food Management System. Here, there are
 4. Hard Disk:  20 GB hard disk or above
 
 ## Software Requirements
-1. Language:  HTML5, CSS3 and PHP
+1. Language:  VC# and XAMPP
 2. Database:  MySQL Relational Database
