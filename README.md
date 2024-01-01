@@ -34,7 +34,6 @@ All the tables in the database:
 ![image](https://github.com/harshita2234/Database-Systems-Project/assets/97393648/8b762087-ac56-4a8b-882f-27577661703b)
 ![image](https://github.com/harshita2234/Database-Systems-Project/assets/97393648/2c95ffee-8c14-4b8a-9716-10c7ce45fcc9)
 ![image](https://github.com/harshita2234/Database-Systems-Project/assets/97393648/f2d2743f-ce83-4e82-a8dd-add434b51342)
-![image](https://github.com/harshita2234/Database-Systems-Project/assets/97393648/99e9fa5d-0a2b-4321-bceb-570f66054c60)
 ![image](https://github.com/harshita2234/Database-Systems-Project/assets/97393648/1ad00f27-432c-48a3-8b14-43da8e0a9743)
 ![image](https://github.com/harshita2234/Database-Systems-Project/assets/97393648/a72393a7-023f-41c1-8d33-390c0cae9421)
 
