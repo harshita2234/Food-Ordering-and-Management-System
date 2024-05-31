@@ -1,0 +1,3 @@
+*.tex linguist-language=Ignore
+*.sql linguist-detectable=true
+
